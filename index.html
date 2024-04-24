@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+            });
+        });
+    </script>
+
 </head>
+
 <body>
     <header>
         <img src="https://royalsamples.ru/upload/medialibrary/8be/8bed20a613912d0a9e695e7b775cb5c7.png" width="100">
@@ -28,8 +46,15 @@
         </nav>
     </header>
     <main>
-         <div class="post">
-            <img height="251" src="https://resources.cdn-kaspi.kz/img/m/p/h79/hf5/63833280741406.jpg?format=gallery-large"
+        <div class="slider">
+            <img src="https://www.heygirl.pk/cdn/shop/products/bombshellperfume.jpg?v=1691639687" alt="">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/k4ss2a80/perfume/s/4/4/50-bombshell-eau-de-parfum-victorias-secret-women-original-imafnj6ggzjhuvsr.jpeg?q=20&crop=false" alt="">
+            <img src="https://skinstorepakistan.com/cdn/shop/products/images_15_3.jpg?v=1645089075" alt=""> 
+            <img src="https://i.pinimg.com/1200x/e8/a5/a2/e8a5a288b2e95cddc5e7fba561f3169c.jpg" alt="">
+        </div>
+        <div class="post">
+            <img height="251"
+                src="https://resources.cdn-kaspi.kz/img/m/p/h79/hf5/63833280741406.jpg?format=gallery-large"
                 alt="Card image cap">
             <div>
                 <h3>Victoria's Secret Bombshell</h3>
@@ -41,13 +66,16 @@
                 </p>
                 <a href="#">Read more</a>
             </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y87M1FlsddE?si=JlJcV3O0T2hx4EWC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y87M1FlsddE?si=JlJcV3O0T2hx4EWC"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </main>
     <footer>
         <div>
             <img src="https://i.pinimg.com/736x/3a/cd/d4/3acdd43f75af93db805c4eb1eab3ba80.jpg" alt="Logo" width="100">
-             </div>
+        </div>
         <div class="footer-columns">
             <div class="footer-column">
                 <h3>About</h3>
@@ -70,4 +98,5 @@
         </div>
     </footer>
 </body>
+
 </html>
